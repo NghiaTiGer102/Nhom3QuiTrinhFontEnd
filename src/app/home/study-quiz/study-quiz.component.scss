@@ -1,0 +1,34 @@
+.progess-style {
+    margin-top: 50px;
+    width: 600px;
+    margin-left: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.example-radio-button {
+    margin: 5px;
+}
+
+.custom-progessbar {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.question-style{
+    margin: 50px;
+}
+
+.timer {
+    margin-left: 5px;
+    font-size: 20px;
+    height: 30px;
+    padding: 2px;
+}

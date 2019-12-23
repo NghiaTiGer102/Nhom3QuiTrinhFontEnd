@@ -1,0 +1,43 @@
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-90 p-b-30">
+            <form #formRegister="ngForm" (ngSubmit)="submitRegister()" class="login100-form validate-form">
+                <span class="login100-form-title p-b-40">
+                    Register
+                </span>
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100 form-control" type="text" name="user" placeholder="Email"
+                        [(ngModel)]="registerModel.user">
+
+                </div>
+                <div class="wrap-input100 validate-input m-b-20">
+                    <span class="btn-show-pass">
+                        <i class="fa fa fa-eye"></i>
+                    </span>
+                    <input class="input100 form-control" type="password" name="pass" placeholder="Password"
+                        [(ngModel)]="registerModel.pass">
+
+                </div>
+                <div class="wrap-input100 validate-input m-b-20">
+                    <span class="btn-show-pass">
+                        <i class="fa fa fa-eye"></i>
+                    </span>
+                    <input class="input100 form-control" type="password" name="confirmpass"
+                        placeholder="Confirm Password">
+
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Register
+                    </button>
+                </div>
+                <div class="flex-col-c " style="margin-top: 30px">
+                    <a href="#" class="txt3 bo1 hov1">
+                        Login
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
