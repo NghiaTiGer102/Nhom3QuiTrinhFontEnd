@@ -1,16 +1,15 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/angular-cli-circleci
     docker:
       - image: circleci/node:6-browsers
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
+     
       - run:
           name: install-dependencies
           command: npm  i @angular/compiler-cli
       - run:
           name: build
-          command: ng serve
+          command: npm start
+           
