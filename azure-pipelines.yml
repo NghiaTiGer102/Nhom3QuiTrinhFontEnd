@@ -12,6 +12,7 @@ steps:
 
 - script: |
     pushd tritronFrontend
+    npm i handlebars
     npm install @types/jquery 
     npm install -g @angular/cli@7.3.8
     npm install
