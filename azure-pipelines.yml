@@ -11,10 +11,12 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-     npm install @types/jquery 
+    pushd tritronFrontend
+    npm install @types/jquery 
     npm install -g @angular/cli@7.3.8
     npm install
     npm audit fix
+    
     npm run build
     ng build --prod
   displayName: 'npm install and build'
