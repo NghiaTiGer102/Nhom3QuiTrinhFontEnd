@@ -1,8 +1,3 @@
-# Node.js with Angular
-# Build a Node.js project that uses Angular.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
 - master
 
@@ -16,7 +11,9 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g @angular/cli
+    pushd tritronFrontend
+    npm install -g @angular/cli@7.3.8
     npm install
+    npm run build
     ng build --prod
   displayName: 'npm install and build'
