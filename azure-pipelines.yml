@@ -15,6 +15,7 @@ steps:
     npm install -g @angular/cli@7.3.8
     npm install
     npm audit fix
+    npm install @types/jquery 
     npm run build
     ng build --prod
   displayName: 'npm install and build'
