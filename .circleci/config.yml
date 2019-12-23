@@ -11,6 +11,6 @@ jobs:
           command: npm  i @angular/compiler-cli
       - run:
           name: build
-          command: npm start
-          working_directory: ./WebApp
+          command: ng serve --proxy-config proxy.config.json
+         
            
