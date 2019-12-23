@@ -13,4 +13,4 @@ jobs:
           command: npm  i @angular/compiler-cli
       - run:
           name: build
-          command: npm  start
+          command: ng serve
