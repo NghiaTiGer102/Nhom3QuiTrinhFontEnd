@@ -15,9 +15,8 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: |
+- script: 
     npm install -g @angular/cli
     npm install
-    npm i handlebars
     ng build --prod
-  displayName: 'npm install and build'
+    displayName: 'npm install and build'
