@@ -10,7 +10,7 @@ jobs:
           key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
           name: install-dependencies
-          command: yarn  i @angular/compiler-cli
+          command: npm  i @angular/compiler-cli
       - run:
-          name: install-dependencies
-          command: yarn  start
+          name: build
+          command: npm  start
