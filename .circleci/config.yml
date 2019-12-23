@@ -1,7 +1,5 @@
 version: 2.1
 
-
-
 orbs:
   win: circleci/windows@1.0.0
 
@@ -12,12 +10,8 @@ jobs:
       shell: powershell.exe
     steps:
       - checkout
-     
+      
       - run:
-          name: "Install project dependencies"
-          command: npm i @angular/compiler-
-          
-          - run:
-          name: "Install project dependencies"
+          command: npm i @angular/compiler-cli
+     - run:
           command: npm start
-     
