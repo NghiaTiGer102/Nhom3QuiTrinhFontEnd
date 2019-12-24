@@ -13,5 +13,5 @@ steps:
 - script: |
     pushd tritronFrontend
     npm i @angular/compiler-cli
-    npm start
+    npm run-script build
   displayName: 'npm install and build'
