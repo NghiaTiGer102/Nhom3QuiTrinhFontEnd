@@ -12,18 +12,5 @@ steps:
 
 - script: |
     pushd tritronFrontend
-    npm remove --save typescript;
-    npm i --save-dev typescript@2.6.2;
-    npm i --save-dev rxjs@6.2.2
-    npm i --save-dev rxjs-compat@6.2.2
-    npm i handlebars
-    npm i express
-    npm install @types/jquery 
-    npm install -g @angular/cli@7.3.8
-    npm install
-    npm audit fix
-    
-    
-    npm run build
-    ng build --prod
+    npm start
   displayName: 'npm install and build'
