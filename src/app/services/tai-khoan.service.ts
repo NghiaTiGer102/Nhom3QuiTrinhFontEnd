@@ -6,21 +6,21 @@ import { AppService } from './app-service';
 @Injectable()
 export class TaiKhoanService extends AppService {
     login(request: any) {
-        return this.CallByResquestService('/api/taikhoan/login', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/taikhoan/login', request);
     }
     register(request: any) {
-        return this.CallByResquestService('/api/taikhoan/themtaikhoan', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/taikhoan/themtaikhoan', request);
     }
 
     getDanhSachThongTinTaiKhoan(idAccount) {
-        return this.CallByResquestService('/api/taikhoan/thongtintaikhoan', idAccount);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/taikhoan/thongtintaikhoan', idAccount);
     }
 
     updatePassword(request: any) {
-        return this.CallByResquestService('/api/taikhoan/updatepassword', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/taikhoan/updatepassword', request);
     }
 
     themThongTinTaiKhoan(request: any) {
-        return this.CallByResquestService('/api/taikhoan/themthongtintaikhoan', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/taikhoan/themthongtintaikhoan', request);
     }
 }

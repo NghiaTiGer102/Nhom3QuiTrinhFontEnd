@@ -8,14 +8,14 @@ export class DisplaySettingService extends AppService {
     listDiemKN: any;
 
     getDsKhoaHoc() {
-        return this.CallAllService('/api/khoahoc/GetDSKhoaHoc');
+        return this.CallAllService('https://weblaptrinh.azurewebsites.net/api/khoahoc/GetDSKhoaHoc');
     }
     getDsCapDo() {
-        return this.CallAllService('/api/CapDo/GetCapDo');
+        return this.CallAllService('https://weblaptrinh.azurewebsites.net/api/CapDo/GetCapDo');
     }
 
     getDsDiemKinhNghiem() {
-        return this.CallAllService('/api/LoaiDiemKN/GetDSLoaiDiemKN');
+        return this.CallAllService('https://weblaptrinh.azurewebsites.net/api/LoaiDiemKN/GetDSLoaiDiemKN');
     }
 
     getDisplaySetting() {

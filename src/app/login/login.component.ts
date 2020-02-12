@@ -11,6 +11,13 @@ import { WebKeyStorage } from '../global/web-key-storage';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
+/*
+  Ngày review: 2/1/2020
+  Thành viên code: Huỳnh Quang Minh
+  Thành viên review: Trần Hữu Nghĩa
+  Thành viên sửa lỗi: 
+  Tình trạng: không có lỗi
+*/
 export class LoginComponent implements OnInit {
   loginModel = new LoginRequestModel();
   formLogin: NgForm;

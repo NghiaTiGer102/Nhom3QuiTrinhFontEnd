@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chatbot-whlqps": {
+      "hosting": {
+        "WebApp": [
+          "chatbot-whlqps"
+        ]
+      }
+    }
+  }
+}

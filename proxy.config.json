@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://localhost:3100",
+        "target": "https://weblaptrinh.azurewebsites.net/",
         "secure": false,
         "changeOrigin": true
     }

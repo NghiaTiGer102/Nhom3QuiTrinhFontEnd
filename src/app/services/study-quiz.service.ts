@@ -3,9 +3,9 @@ import { AppService } from './app-service';
 @Injectable()
 export class StudyQuizService extends AppService {
     getDsCauHoi(request: any = {}) {
-        return this.CallByResquestService('/api/cauhoi/getdscauhoi', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/cauhoi/getdscauhoi', request);
     }
     getDsDapAn(request: any = {}) {
-        return this.CallByResquestService('/api/dapan/listdapan', request);
+        return this.CallByResquestService('https://weblaptrinh.azurewebsites.net/api/dapan/listdapan', request);
     }
 }
